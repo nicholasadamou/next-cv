@@ -10,7 +10,7 @@ export const Profile: React.FC<ProfileDataProps> = ({ title, items }) => {
         {items.map((item, index) => {
           return (
             <div className='flex' key={index}>
-              <div className='text-muted-foreground mr-8 w-full max-w-[100px]'>
+              <div className='text-muted-foreground mr-2 md:mr-8 w-full max-w-[100px]'>
                 {item.date}
               </div>
               <div className='flex flex-1 flex-col'>
