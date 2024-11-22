@@ -67,13 +67,11 @@ export default function Home() {
 								{contact.label}
 							</div>
 							<div className='flex flex-1 flex-col text-slate-900 dark:text-slate-100'>
-								<motion.a
+								<a
 									href={contact.href}
 									target='_blank'
 									rel='noopener noreferrer'
 									className='inline-flex hover:underline'
-									whileHover={{ scale: 1.05 }}
-									whileTap={{ scale: 0.95 }}
 								>
 									{contact.value}
 									<svg
@@ -88,7 +86,7 @@ export default function Home() {
 											className='fill-current text-slate-900 dark:text-slate-100'
 										></path>
 									</svg>
-								</motion.a>
+								</a>
 							</div>
 						</motion.div>
 					))}
