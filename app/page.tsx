@@ -63,7 +63,7 @@ export default function Home() {
 				>
 					{bioData.contacts.map((contact, index) => (
 						<motion.div className='flex' key={index} variants={itemVariants}>
-							<div className='mr-2 md:mr-8 w-full max-w-[100px] text-slate-400 dark:text-slate-400'>
+							<div className='mr-2 md:mr-8 w-full max-w-[100px] text-muted-foreground'>
 								{contact.label}
 							</div>
 							<div className='flex flex-1 flex-col text-slate-900 dark:text-slate-100'>
