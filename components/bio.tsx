@@ -31,7 +31,7 @@ export function Bio({ bio }: BioProps) {
       />
       <div className='ml-4 flex-1'>
         <h1 className='mb-0.5 text-xl'>{bio.name}</h1>
-        <p className='text-muted-foreground text-sm'>{bio.jobTitle}</p>
+        <p className={`text-muted-foreground text-sm ${bio.website ? 'mb-1' : ''}`}>{bio.jobTitle}</p>
 
         {bio.website ? (
           <span className='text-muted-foreground bg-secondary rounded-full px-2 py-1 text-xs'>
